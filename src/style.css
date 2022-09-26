@@ -40,3 +40,20 @@ nav {
     font-family: 'Roboto', sans-serif;
     letter-spacing: calc(0.14259rem * 2);
 }
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.45rem 0.75rem;
+    margin: 0 1rem;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+    color: var(--clr-primary);
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-family: 'Roboto', sans-serif;
+
+}
