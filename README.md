@@ -1,14 +1,16 @@
-# **Bookstore** :orange_book:
+# **Space Hub** :gem:
 
-- This is a reskin of the original Bookstore app. It is a simple bookstore app that allows you to add and remove books from a list. It also allows you to change the read status of a book.
+- This is a group project. The goal is to build a website where users can book rockets and join selected space missions.
+- The project is built using React and Redux.
+- The project is deployed on Netlify.
 
 ## Built With
 
 - HTML, CSS , JavaScript
 - SCSS , Webpack, and React
 
-# Live Demo Link:
-[live demo](https://bookcms.netlify.app/)
+<!-- # Live Demo Link:
+[live demo](https://bookcms.netlify.app/) -->
 
 ## Getting Started
 To get a local copy up and running follow these simple example steps.
@@ -56,6 +58,8 @@ Give a ⭐️ if you like this project!
 ## Acknowledgments
 
 - The Awesome Teamwork! and Microverse!
+- Kevin Powell and His Awsome Tutorials :heart:
+- The Awesome Code Reviewers :heart:
 
 ## 📝 License
 
