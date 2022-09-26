@@ -23,11 +23,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0.45rem 0.75rem;
+
 }
 
 .logo img {
     height: 4rem;
     width: auto;
+    margin-right: calc(0.22rem * 2);
 }
 
 .logo span {
@@ -35,4 +38,5 @@ nav {
     font-weight: 700;
     color: #333;
     font-family: 'Roboto', sans-serif;
+    letter-spacing: calc(0.14259rem * 2);
 }
