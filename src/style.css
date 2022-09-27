@@ -127,3 +127,28 @@ nav {
   color: #fff;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+ .rocket-container {
+  flex-direction: column;
+ }
+  .rocketImage > img {
+    height: 175px;
+    width: auto;
+  }
+
+  .rocket-details {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rocket-container p {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .Rocket-List {
+    margin: 4rem 0;
+  }
+}
+  
