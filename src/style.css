@@ -61,6 +61,7 @@ nav {
   align-items: center;
   justify-content: center;
   padding: 0.45rem 0.75rem;
+  margin: 0.5rem 0.8rem;
 }
 
 .rocket-details {
@@ -69,6 +70,20 @@ nav {
   align-items: flex-start;
   justify-content: center;
   padding: 0.45rem 0.75rem;
+}
+
+.rocket-details p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+.rocket-details h2 {
+  margin: 0.1rem 0.4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 .rocketImage >img {
