@@ -55,3 +55,24 @@ nav {
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
 }
+
+.rocket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+}
+
+.rocket-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+}
+
+.rocketImage {
+  width: auto;
+  height: 200px;
+
+}

@@ -8,7 +8,7 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
   };
   return (
     <article className="rocket-container">
-      <img src={rocketImage} alt={rocketName} />
+      <img className="rocketImage" src={rocketImage} alt={rocketName} />
       <div className="rocket-details">
         <h2>{rocketName}</h2>
         <p>{rocketDescription}</p>
