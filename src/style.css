@@ -71,8 +71,15 @@ nav {
   padding: 0.45rem 0.75rem;
 }
 
-.rocketImage {
+.rocketImage >img {
   width: auto;
-  height: 200px;
+  height: 250px;
+  justify-self: flex-start;
+}
 
+.Rocket-List {
+  display: grid;
+  row-gap: 5rem;
+  padding: 0.576rem 0.75rem;
+  justify-items: center;
 }
