@@ -151,5 +151,8 @@ nav {
   .Rocket-List {
     margin: 4rem 0;
   }
-}
 
+  .logo {
+    display: none;
+  }
+}
