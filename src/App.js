@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom';
 import Missions from './Componenets/Mission';
 import Nav from './Componenets/Nav';
-import Rockets from './Componenets/Rockets';
+import RocketList from './Componenets/RocketList';
 import Profile from './Componenets/Profile';
 
 function App() {
