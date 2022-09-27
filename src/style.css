@@ -90,7 +90,7 @@ nav {
   font-family: 'Roboto', sans-serif;
 }
 
-.rocketImage >img {
+.rocketImage > img {
   width: auto;
   height: 250px;
   justify-self: flex-start;
