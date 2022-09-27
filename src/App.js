@@ -14,7 +14,7 @@ function App() {
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Rockets />
+          <RocketList />
         </Route>
         <Route path="/missions">
           <Missions />
