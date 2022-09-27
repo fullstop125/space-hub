@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;400;500;600;700;800&family=Lato&family=Poppins:wght@100;300;400;500;600;700&family=Roboto+Mono:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+:root {
+  --clr-btn: #0290ff;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -54,4 +58,101 @@ nav {
   font-size: 1.1rem;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
+}
+
+.rocket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  margin: 0.5rem 0.8rem;
+}
+
+.rocket-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+}
+
+.rocket-details p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+.rocket-details h2 {
+  margin: 0.1rem 0.4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rocketImage > img {
+  width: auto;
+  height: 250px;
+  justify-self: flex-start;
+}
+
+.Rocket-List {
+  display: grid;
+  row-gap: 5rem;
+  padding: 0.576rem 0.75rem;
+  justify-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--clr-btn);
+  border-radius: 0.25rem;
+  color: var(--clr-btn);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.btn-primary {
+  background: var(--clr-btn);
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .rocket-container {
+    flex-direction: column;
+  }
+
+  .rocketImage > img {
+    height: 175px;
+    width: auto;
+  }
+
+  .rocket-details {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rocket-container p {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .Rocket-List {
+    margin: 4rem 0;
+  }
+
+  .logo {
+    display: none;
+  }
 }
