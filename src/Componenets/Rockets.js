@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
   Rockets.propTypes = {
     rocketImage: PropTypes.string.isRequired,
