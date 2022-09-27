@@ -129,9 +129,10 @@ nav {
 }
 
 @media screen and (max-width: 768px) {
- .rocket-container {
-  flex-direction: column;
- }
+  .rocket-container {
+    flex-direction: column;
+  }
+
   .rocketImage > img {
     height: 175px;
     width: auto;
@@ -151,4 +152,4 @@ nav {
     margin: 4rem 0;
   }
 }
-  
+
