@@ -170,6 +170,7 @@ nav {
   font-weight: 500;
   font-family: 'Lato', sans-serif;
   color: #333;
+}
 
 table {
   border-collapse: collapse;
@@ -206,7 +207,6 @@ tr:nth-child(even) {
   letter-spacing: 0.01rem;
   border: 1px solid #555;
   font-size: 0.8rem;
-
 }
 
 @media screen and (max-width: 768px) {
