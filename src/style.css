@@ -206,4 +206,9 @@ nav {
     align-items: center;
     justify-content: center;
   }
+
+  .list-container {
+    align-items: center;
+    justify-content: center;
+  }
 }
