@@ -128,6 +128,12 @@ nav {
   cursor: pointer;
 }
 
+.btn-disabled {
+  background: #333;
+  color: #fff;
+  cursor: not-allowed;
+}
+
 @media screen and (max-width: 768px) {
   .rocket-container {
     flex-direction: column;

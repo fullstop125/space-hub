@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { reserved } from '../Redux/profile/profile';
 
@@ -8,11 +9,13 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
     rocketName: PropTypes.string.isRequired,
     rocketDescription: PropTypes.string.isRequired,
   };
+  const [reservedStatus, setReservedStatus] = useState(false);
   const dispatch = useDispatch();
   const handleReservations = (e) => {
     const rocketName = e.target.parentElement.children[0].innerText;
     const rocket = rocketName;
     dispatch(reserved(rocket));
+    setReservedStatus(true);
   };
 
   return (
@@ -23,7 +26,7 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
       <div className="rocket-details">
         <h2>{rocketName}</h2>
         <p>{rocketDescription}</p>
-        <button type="submit" className="btn btn-primary" onClick={handleReservations}>Reserve</button>
+        {(reservedStatus) ? <button type="button" className="btn-disabled btn">Reserverd</button> : <button type="submit" className="btn btn-primary" onClick={handleReservations}>Reserve</button>}
       </div>
     </article>
   );
