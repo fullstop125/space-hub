@@ -195,6 +195,26 @@ tr:nth-child(even) {
   background-color: #f4f4f4;
 }
 
+.badge-primary {
+  background: #0290ff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.badge-secondary {
+  background: #555;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
 .btn-secondary {
   padding: 4px;
   white-space: nowrap;
@@ -206,6 +226,20 @@ tr:nth-child(even) {
   color: #555;
   letter-spacing: 0.01rem;
   border: 1px solid #555;
+  font-size: 0.8rem;
+}
+
+.btn-danger {
+  padding: 4px;
+  white-space: nowrap;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.6s;
+  color: red;
+  letter-spacing: 0.01rem;
+  border: 1px solid red;
   font-size: 0.8rem;
 }
 

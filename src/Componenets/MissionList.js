@@ -1,14 +1,10 @@
-import React, { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getMissions } from '../Redux/Missions/mission';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import Missions from './Mission';
 
 const MissionList = () => {
   const missions = useSelector((state) => state.missions);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getMissions());
-  }, []);
+
   return (
     <div className="mission-list">
       <table>
@@ -24,6 +20,8 @@ const MissionList = () => {
             key={mission.mission_id}
             missionName={mission.mission_name}
             missionDescription={mission.description}
+            missionId={mission.mission_id}
+            reserved={mission.reserved !== false}
           />
         ))}
       </table>
