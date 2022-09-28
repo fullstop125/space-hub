@@ -25,6 +25,7 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
       </div>
       <div className="rocket-details">
         <h2>{rocketName}</h2>
+        { reservedStatus && <div className="badge">Reserved</div> }
         <p>{rocketDescription}</p>
         {(reservedStatus) ? <button type="button" className="btn-disabled btn">Reserverd</button> : <button type="submit" className="btn btn-primary" onClick={handleReservations}>Reserve</button>}
       </div>

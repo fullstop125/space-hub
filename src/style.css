@@ -129,9 +129,23 @@ nav {
 }
 
 .btn-disabled {
-  background: #333;
+  border: 1px solid #333;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
   color: #fff;
-  cursor: not-allowed;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #18A2B8;
 }
 
 @media screen and (max-width: 768px) {
