@@ -1,20 +1,30 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { joined } from '../Redux/profile/profile';
 
-const Missions = ({ missionName, missionDescription }) => (
-  <tr>
-    <td>{missionName}</td>
+const Missions = ({ missionName, missionDescription }) => {
+  const dispatch = useDispatch();
+  const handleJoin = (e) => {
+    e.preventDefault();
+    dispatch(joined(missionName));
+  };
 
-    <td>{missionDescription}</td>
+  return (
+    <tr>
+      <td>{missionName}</td>
 
-    <td>Active</td>
+      <td>{missionDescription}</td>
 
-    <td>
-      <button type="button" className="btn btn-secondary">
-        Join Mission
-      </button>
-    </td>
-  </tr>
-);
+      <td>Active</td>
+
+      <td>
+        <button type="button" className="btn btn-secondary" onClick={handleJoin}>
+          Join Mission
+        </button>
+      </td>
+    </tr>
+  );
+};
 
 Missions.propTypes = {
   missionName: PropTypes.string.isRequired,

@@ -32,14 +32,13 @@ export default function profileReducer(state = initialState, action = {}) {
     case JOINED:
       return {
         ...state,
-        joined: action.payload,
+        joined: [...state.joined, action.payload],
       };
     case CANCEL_RESERVATION:
       return {
         ...state,
         reserved: state.reserved.filter((item) => item !== action.payload),
       };
-
     default:
       return state;
   }
