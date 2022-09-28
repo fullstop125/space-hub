@@ -6,8 +6,8 @@ const Profile = () => {
   return (
     <section className="Profile">
       <article className="Profile-Reservations">
-        <h2>My Reservations</h2>
-        <ul>
+        <h2 className="Title">My Reservations</h2>
+        <ul className="list-container">
           {reservations.map((item) => (
             <li key={uuid}>
               <p>{item}</p>
