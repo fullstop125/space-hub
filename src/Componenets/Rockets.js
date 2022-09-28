@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { reserved } from '../Redux/profile/profile';
+import { cancelReservation, reserved } from '../Redux/profile/profile';
 
 const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
   Rockets.propTypes = {
@@ -18,8 +18,10 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
     setReservedStatus(true);
   };
 
-  const handleCancel = () => {
+  const handleCancel = (e) => {
     setReservedStatus(false);
+    const rocketName = e.target.parentElement.children[0].innerText;
+    dispatch(cancelReservation(rocketName));
   };
 
   return (

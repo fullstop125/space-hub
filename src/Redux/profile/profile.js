@@ -17,6 +17,11 @@ const initialState = {
   joined: [],
 };
 
+export const cancelReservation = (payload) => ({
+  type: CANCEL_RESERVATION,
+  payload,
+});
+
 export default function profileReducer(state = initialState, action = {}) {
   switch (action.type) {
     case RESERVED:
