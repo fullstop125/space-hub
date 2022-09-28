@@ -21,7 +21,7 @@ export default function profileReducer(state = initialState, action = {}) {
     case RESERVED:
       return {
         ...state,
-        reserved: action.payload,
+        reserved: [...state.reserved, action.payload],
       };
     case JOINED:
       return {

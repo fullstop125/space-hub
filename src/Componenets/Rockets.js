@@ -1,4 +1,6 @@
 import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux';
+import { reserved } from '../Redux/profile/profile';
 
 const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
   Rockets.propTypes = {
@@ -6,6 +8,13 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
     rocketName: PropTypes.string.isRequired,
     rocketDescription: PropTypes.string.isRequired,
   };
+  const dispatch = useDispatch();
+  const handleReservations = (e) => {
+    const rocketName = e.target.parentElement.children[0].innerText;
+    const rocket = rocketName;
+    dispatch(reserved(rocket));
+  };
+
   return (
     <article className="rocket-container">
       <div className="rocketImage">
@@ -14,7 +23,7 @@ const Rockets = ({ rocketImage, rocketName, rocketDescription }) => {
       <div className="rocket-details">
         <h2>{rocketName}</h2>
         <p>{rocketDescription}</p>
-        <button type="submit" className="btn btn-primary">Reserve</button>
+        <button type="submit" className="btn btn-primary" onClick={handleReservations}>Reserve</button>
       </div>
     </article>
   );
