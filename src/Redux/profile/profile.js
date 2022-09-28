@@ -1,5 +1,6 @@
 const RESERVED = 'space-hub/profile/RESERVED';
 const JOINED = 'space-hub/profile/JOINED';
+const CANCEL_RESERVATION = 'space-hub/profile/CANCEL_RESERVATION';
 
 export const reserved = (payload) => ({
   type: RESERVED,
@@ -28,6 +29,12 @@ export default function profileReducer(state = initialState, action = {}) {
         ...state,
         joined: action.payload,
       };
+    case CANCEL_RESERVATION:
+      return {
+        ...state,
+        reserved: state.reserved.filter((item) => item !== action.payload),
+      };
+
     default:
       return state;
   }
