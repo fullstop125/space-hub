@@ -1,16 +1,17 @@
 import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux';
-import { joinMission, leaveMission } from '../Redux/Missions/mission';
+import { useDispatch, useSelector } from 'react-redux';
+import { joined } from '../Redux/profile/profile';
 
-const Missions = ({
-  missionId, reserved, missionName, missionDescription,
-}) => {
+const Missions = ({ missionName, missionDescription }) => {
+  const missionJoined = useSelector((state) => state.profile.joined);
   const dispatch = useDispatch();
-  const reserveMission = () => {
-    dispatch(joinMission(missionId));
-  };
-  const cancelReservation = () => {
-    dispatch(leaveMission(missionId));
+  const handleJoin = (e) => {
+    e.preventDefault();
+    const name = missionName;
+    if (missionJoined.includes(name)) {
+      return;
+    }
+    dispatch(joined(name));
   };
 
   return (
@@ -19,32 +20,31 @@ const Missions = ({
 
       <td>{missionDescription}</td>
 
-      {reserved && (
+      {!missionJoined.includes(missionName) && (
         <td>
           <div className="badge-secondary">Not A Member</div>
         </td>
       )}
-      {!reserved && (
+      {missionJoined.includes(missionName) && (
         <td>
           <div className="badge-primary">Active Member</div>
         </td>
       )}
 
       <td>
-        {!reserved && (
+        {missionJoined.includes(missionName) && (
           <button
             type="button"
             className="btn btn-danger"
-            onClick={reserveMission}
           >
             Leave Mission
           </button>
         )}
-        {reserved && (
+        {!missionJoined.includes(missionName) && (
           <button
             type="button"
             className="btn btn-secondary"
-            onClick={cancelReservation}
+            onClick={handleJoin}
           >
             Join Mission
           </button>
@@ -57,7 +57,5 @@ const Missions = ({
 Missions.propTypes = {
   missionName: PropTypes.string.isRequired,
   missionDescription: PropTypes.string.isRequired,
-  missionId: PropTypes.string.isRequired,
-  reserved: PropTypes.bool.isRequired,
 };
 export default Missions;
