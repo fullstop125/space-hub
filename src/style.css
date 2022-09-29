@@ -282,21 +282,25 @@ tr:nth-child(even) {
     align-items: center;
     justify-content: center;
   }
+
   tr {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   th {
     display: none;
   }
+
   td {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   td::before {
     content: attr(data-label);
     font-weight: bold;
@@ -354,7 +358,7 @@ tr:nth-child(even) {
     margin-bottom: 1rem;
     display: block;
     border-bottom: 3px solid #ddd;
-  }   
+  }
 
   table td::before {
     content: attr(data-label);
@@ -366,6 +370,4 @@ tr:nth-child(even) {
   table td:last-child {
     border-bottom: 0;
   }
-
-
 }
