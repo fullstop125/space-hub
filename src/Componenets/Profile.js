@@ -3,8 +3,7 @@ import uuid from 'react-uuid';
 
 const Profile = () => {
   const reservations = useSelector((state) => state.profile.reserved);
-  const mission = useSelector((state) => state.missions);
-  const joined = mission.filter((item) => item.reserved === !true);
+  const mission = useSelector((state) => state.profile.joined);
   return (
     <section className="Profile">
       <article className="Profile-Reservations">
@@ -20,11 +19,11 @@ const Profile = () => {
       <article className="Profile-Missions">
         <h2>My Missions</h2>
         <ul className="list-container">
-          <li>
-            {joined.map((item) => (
-              <p key={uuid}>{item.mission_name}</p>
-            ))}
-          </li>
+          {mission.map((item) => (
+            <li key={uuid}>
+              <p>{item}</p>
+            </li>
+          ))}
         </ul>
       </article>
     </section>
