@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import { useDispatch, useSelector } from 'react-redux';
-import { joined } from '../Redux/profile/profile';
+import { joined, leaveMission } from '../Redux/profile/profile';
 
 const Missions = ({ missionName, missionDescription }) => {
   const missionJoined = useSelector((state) => state.profile.joined);
@@ -12,6 +12,11 @@ const Missions = ({ missionName, missionDescription }) => {
       return;
     }
     dispatch(joined(name));
+  };
+
+  const handleLeave = (e) => {
+    e.preventDefault();
+    dispatch(leaveMission(missionName));
   };
 
   return (
@@ -36,6 +41,7 @@ const Missions = ({ missionName, missionDescription }) => {
           <button
             type="button"
             className="btn btn-danger"
+            onClick={handleLeave}
           >
             Leave Mission
           </button>
