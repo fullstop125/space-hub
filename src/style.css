@@ -282,4 +282,90 @@ tr:nth-child(even) {
     align-items: center;
     justify-content: center;
   }
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  th {
+    display: none;
+  }
+  td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .badge-primary {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .badge-secondary {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-secondary {
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+
+  .btn-danger {
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+
+  table {
+    width: 100%;
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.5rem;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 1rem;
+    display: block;
+    border-bottom: 3px solid #ddd;
+  }   
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
+
+
 }
