@@ -43,13 +43,17 @@ Then open the browser and go to the following link:
 - Twitter : [@SyedShujaHussa3](https://twitter.com/SyedShujaHussa3)
 - LinkedIn :[@syedshujahussa](https://www.linkedin.com/in/syedshujahussa/)
 
+👤 **Hassan Momanyi**
 
+- GitHub: [@fullstop125](https://github.com/fullstop125)
+- Twitter: [@moseshassany](https://twitter.com/moseshassany)
+- LinkedIn: [momanyi-hassan](https://linkedin.com/in/momanyi-hassan-32a489180/)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/shuja-shah/space-hub/issues).
 
 ## Show your support
 
