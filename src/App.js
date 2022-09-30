@@ -1,23 +1,26 @@
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
-import Missions from './Componenets/Mission';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { useEffect } from 'react';
 import Nav from './Componenets/Nav';
-import Rockets from './Componenets/Rockets';
+import RocketList from './Componenets/RocketList';
 import Profile from './Componenets/Profile';
+import MissionList from './Componenets/MissionList';
+import { getMissions } from './Redux/Missions/mission';
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMissions());
+  }, []);
   return (
     <Router>
       <Nav />
       <Switch>
         <Route exact path="/">
-          <Rockets />
+          <RocketList />
         </Route>
         <Route path="/missions">
-          <Missions />
+          <MissionList />
         </Route>
         <Route path="/profile">
           <Profile />

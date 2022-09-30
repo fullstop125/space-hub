@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;400;500;600;700;800&family=Lato&family=Poppins:wght@100;300;400;500;600;700&family=Roboto+Mono:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
 
+:root {
+  --clr-btn: #0290ff;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -54,4 +58,317 @@ nav {
   font-size: 1.1rem;
   font-weight: 500;
   font-family: 'Roboto', sans-serif;
+}
+
+.rocket-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+  margin: 0.5rem 0.8rem;
+}
+
+.rocket-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+}
+
+.rocket-details p {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+.rocket-details h2,
+.Title {
+  margin: 0.1rem 0.4rem;
+  font-size: 2.5rem;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rocketImage > img {
+  width: auto;
+  height: 250px;
+  justify-self: flex-start;
+}
+
+.Rocket-List {
+  display: grid;
+  row-gap: 5rem;
+  padding: 0.576rem 0.75rem;
+  justify-items: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid var(--clr-btn);
+  border-radius: 0.25rem;
+  color: var(--clr-btn);
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s linear;
+}
+
+.btn:hover {
+  background: #333;
+  color: #fff;
+}
+
+.btn-primary {
+  background: var(--clr-btn);
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-disabled {
+  border: 1px solid #333;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  background: #18a2b8;
+}
+
+.Profile {
+  margin: 1.756rem 1.22rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0.45rem 0.75rem;
+}
+
+.list-container li {
+  margin: 0.1rem 0.4rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: 'Lato', sans-serif;
+  color: #333;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+tr,
+th,
+td {
+  border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f4f4f4;
+}
+
+.badge-primary {
+  background: #0290ff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.badge-secondary {
+  background: #555;
+  border-radius: 5px;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  font-weight: 400;
+}
+
+.btn-secondary {
+  padding: 4px;
+  white-space: nowrap;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.6s;
+  color: #555;
+  letter-spacing: 0.01rem;
+  border: 1px solid #555;
+  font-size: 0.8rem;
+}
+
+.btn-danger {
+  padding: 4px;
+  white-space: nowrap;
+  background: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  font-weight: 400;
+  transition: 0.6s;
+  color: red;
+  letter-spacing: 0.01rem;
+  border: 1px solid red;
+  font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+  .rocket-container {
+    flex-direction: column;
+  }
+
+  .rocketImage > img {
+    height: 175px;
+    width: auto;
+  }
+
+  .rocket-details {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .rocket-container p {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  .Rocket-List {
+    margin: 4rem 0;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .Profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .list-container {
+    align-items: center;
+    justify-content: center;
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  th {
+    display: none;
+  }
+
+  td {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: bold;
+    display: inline-block;
+    width: 100px;
+  }
+
+  .btn {
+    padding: 0.5rem 1rem;
+  }
+
+  .badge {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.75rem;
+  }
+
+  .badge-primary {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .badge-secondary {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .btn-secondary {
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+
+  .btn-danger {
+    padding: 4px;
+    font-size: 0.8rem;
+  }
+
+  .btn-primary {
+    padding: 0.5rem 1rem;
+  }
+
+  table {
+    width: 100%;
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.5rem;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    margin-bottom: 1rem;
+    display: block;
+    border-bottom: 3px solid #ddd;
+  }
+
+  table td::before {
+    content: attr(data-label);
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  table td:last-child {
+    border-bottom: 0;
+  }
 }
