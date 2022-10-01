@@ -37,17 +37,19 @@ Then open the browser and go to the following link:
 
 # Authors
 
+👤 **Hassan Momanyi**
+
+- GitHub: [@fullstop125](https://github.com/fullstop125)
+- Twitter: [@moseshassany](https://twitter.com/moseshassany)
+- LinkedIn: [momanyi-hassan](https://linkedin.com/in/momanyi-hassan-32a489180/)
+
+
 👤 **Syed Shuja Hussain (He/Him)**
 
 - GitHub: [@shuja-shah](https://github.com/shuja-shah)
 - Twitter : [@SyedShujaHussa3](https://twitter.com/SyedShujaHussa3)
 - LinkedIn :[@syedshujahussa](https://www.linkedin.com/in/syedshujahussa/)
 
-👤 **Hassan Momanyi**
-
-- GitHub: [@fullstop125](https://github.com/fullstop125)
-- Twitter: [@moseshassany](https://twitter.com/moseshassany)
-- LinkedIn: [momanyi-hassan](https://linkedin.com/in/momanyi-hassan-32a489180/)
 
 ## 🤝 Contributing
 
